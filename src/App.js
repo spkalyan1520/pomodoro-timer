@@ -86,7 +86,7 @@ const App = () => {
             <div>
               <h2>Previous times</h2>
               <div>
-                {timeline.map(({count}) => (
+                {timeline.map(({isPrep, count}) => (
                   <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
                     <div>{isPrep?'Prep':'Break'}</div>
                     <div>{displayTime(count)}</div>
